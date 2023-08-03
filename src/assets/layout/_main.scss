@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: $scale;
+}
+
+body {
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    background: var(--surface-ground);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+}
+
+.layout-container {
+    min-height: 100vh;
+}
+
+.iframe-navbar {
+    display: flex;
+    justify-content: space-between;
+    .iframe {
+        width: 75%;
+    }
+    .navbar {
+        width: 25%;
+        .content-between {
+          background: #f2f3f4;
+        }
+        .review {
+          padding: 1rem;
+          background: #f2f3f4;
+          // #review_btn {
+          //   // background-color: #4069e5ff;
+          // }
+
+          .tab-menu {
+            background: white;
+            justify-content: space-around;
+            padding: 12px !important;
+            border: 1px solid #cfcfc0;
+            display: flex;
+            justify-content: space-around;
+            padding: 2px;
+            border-radius: 6px;
+
+            button {
+              padding: 5px 35px;
+              margin: 5px;
+              border-radius: 6px;
+              border: none;
+              background: none;
+              &.active {
+                background-color: #4069e5ff;
+                color: white;
+              }
+            }
+          }
+        }
+        .search {
+          svg {
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            margin-top: 14px;
+            margin-left: 12px;
+          }
+          input {
+            border: 1px solid #cfcfc0;
+            border-radius: 6px;
+            padding: 11px 11px 11px 30px;
+            width: 100%;
+          }
+        }
+        #review_select {
+          margin-bottom: 20px;
+          select {
+            margin-top: 20px;
+            height: 40px;
+            border-radius: 6px;
+          }
+          .analyse_btn {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            button {
+              background-color: #4069e5ff;
+              color: white;
+              border-radius: 10px;
+              border: 1px solid #4069e5ff;
+            }
+          }
+        }
+        
+
+        #review_select_response {
+          .button-view {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0px 10px;
+            button {
+              border: none;
+              background: none;
+            }
+          }
+          .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 6px;
+            margin-top: 15px;
+
+            .btn {
+              display: flex;
+              flex-direction: column;
+              button {
+                border: none;
+                background: none; 
+              }
+            }
+          }
+        }
+
+      .action_button {
+        padding: 15px 10px !important;
+        button {
+          margin-right: 10px;
+          border-radius: 6px;
+          
+          &.active {
+            background: #4069e5ff;
+            color: white;
+            border: 1px solid #4069e5ff;
+          }
+        }
+        .hidden {
+          display: none;
+        }
+      } 
+      #task-input-action {
+
+        input {
+          margin-top: 20px;
+          height: 40px;
+          border-radius: 6px;
+          width: 100%;
+          padding: 0px 12px;
+          border: 1px solid #cfcfc0;;
+        }
+        .add_task_btn {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 10px;
+          button {
+            background-color: #4069e5ff;
+            color: white;
+            border-radius: 10px;
+            border: 1px solid #4069e5ff;
+            padding: 5px 16px;
+          }
+        }
+
+        .content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          border-radius: 6px;
+          margin-top: 15px;
+
+          .btn {
+            display: flex;
+            flex-direction: column;
+            button {
+              border: none;
+              background: none; 
+            }
+          }
+        }
+      } 
+    }
+}
